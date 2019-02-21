@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @font-face {
+            font-family: aran;
+            src: url(aran.woff);
+        }
+        
+        * {
+            direction: rtl;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            color: white;
+            font-family: aran;
+        }
+
+        html {
+            font-size: 14pt;
+        }
+        
+        .page{
+            display: flex;
+            flex-direction: column;
+            min-width: 500px;
+        }
+
+        .logo {
+            width:30%;
+            height: 30%;
+            background-color: darkgray;
+        }
+
+        
+
+        .text {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        h1, h2{
+            color: white;
+            text-shadow: 2px 2px black;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4em;
+            border: 6px solid white;
+            padding: 20px;
+            box-shadow: 2px 2px black;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        .frame {
+            padding: 5px;
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+        }
+
+        p {
+            padding: 0.3em 2em 0.3em;
+            font-size: 1.4em;
+        }
+
+        #f-1 {
+            background-image: url("img/cups.jpg");
+            height: 500px;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+
+        #f-1 > .text {
+            background-color: rgba(207, 142, 0, 0.7);
+            flex-grow: 1;
+            width:100%;
+        }
+
+        #f-2 {
+            background-image: url("img/deer.jpg");
+            height: 500px;
+            justify-content: start;
+            align-items: center;
+            
+        }
+
+        #f-2 > .text {
+            background-color: rgba(183, 0, 207, 0.7);
+            width:30%;
+            
+        }
+
+        #f-3 {
+            background-image: url("img/paper.jpg");
+            height: 500px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #f-3 > .text {
+            background-color: rgba(66, 66, 66, 0.7);
+            width:100%;
+            height: 100%;
+        }
+
+        #f-4 {
+            background-image: url("img/cup.jpg");
+            height: 500px;
+            justify-content: start;
+            align-items:flex-start;
+        }
+
+        #f-4 > .text {
+            background-color: rgba(207, 17, 17, 0.7);
+            width:40%;
+            height: 60%;
+        }
+
+        #f-5 {
+            background-image: url("img/person.jpg");
+            height: 500px;
+            justify-content: end;
+            align-items: center;
+        }
+
+        #f-5 > .text {
+            background-color: rgba(17, 153, 207, 0.7);
+            width:50%;
+            height: 100%;
+        }
+
+        #f-6 {
+            background-image: url("img/net.jpg");
+            height: 500px;
+            justify-content: end;
+            align-items: center;
+        }
+
+        #f-6 > .text {
+            background-color: rgba(238, 178, 66, 0.5);
+            width:100%;
+            height: 100%;
+        }
+
+        #flogo {
+            width: 10%;
+            box-shadow: 2px 2px white;
+        }
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>תא פלסטיק</title>
+</head>
+<body>
+    <div class="page">
+        <div class="frame" id="f-1">
+            <div class="text">
+                <div class="logo"></div>
+                <h1>
+                    מי אנחנו?<br>תא פלסטי"ק
+                </h1>
+            </div>
+        </div>
+        <div class="frame" id="f-2">
+            <div class="text">
+                <h2>פלסטי"ק?</h2>
+                <p><b>פ</b>ועלים </p>
+                <p><b>ל</b>מען</p>
+                <p><b>ס</b>ביבה</p>
+                <p><b>ט</b>ובה</p>
+                <p><b>י</b>ותר </p>
+                <p>ב<b>ק</b>מפוס</p>
+            </div>
+        </div>
+        <div class="frame" id="f-3">
+            <div class="text">
+                <h2>במה אנחנו מאמינים?</h2>
+                <p>תא פלסטיק שואף לסביבה יותר נקייה וירוקה במגוון תחומים: צמצום פסולת, שינוי הרגלי צריכה, מזרעור השימוש במוצרים חד פעמיים ונייר וכו'.</p>
+            </div>
+        </div>
+        <div class="frame" id="f-4">
+            <div class="text">
+                <p>התא פועל יחד עם שאר התאים הירוקים בקמפוס מול האוניברסיטה, הקפטריות והגופים השונים בה.</p>
+            </div>
+        </div>
+        <div class="frame" id="f-5">
+            <div class="text">
+                <h2>איפה אתם נכנסים לתמונה?</h2>
+                <p>אם נדלק בכם ניצוץ כשקראתם עלינו, אם האש הירוקה בוערת בכם, או אם אתם פשוט מחפשים בית ומשפחה בקמפוס הצטרפו אלינו! 
+                    <a href="mailto:bguzerowaste@gmail.com?subject=פרטים">השאירו פרטים</a>
+                    , וניצור אתכם קשר :)</p>
+            </div>
+        </div>
+        <div class="frame" id="f-6">
+            <div class="text">
+                <h2>עד אז, עשו לנו לייק בפייסבוק!</h2>
+                <img id="flogo" src="img/flogo.png" alt="" onclick="window.location = 'https://www.facebook.com/BGUZW/';">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
