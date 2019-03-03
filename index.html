@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
     <style>
         @font-face {
@@ -18,7 +18,7 @@
         }
 
         html {
-            font-size: 14pt;
+            font-size: 12pt;
         }
         
         .page{
@@ -27,11 +27,6 @@
             min-width: 500px;
         }
 
-        .logo {
-            width:30%;
-            height: 30%;
-            background-color: darkgray;
-        }
 
         
 
@@ -56,6 +51,7 @@
             border: 6px solid white;
             padding: 20px;
             box-shadow: 2px 2px black;
+            background-color: rgba(255, 174, 0, 0.6);
         }
 
         h2 {
@@ -77,19 +73,19 @@
         #f-1 {
             background-image: url("img/cups.jpg");
             height: 500px;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
             
         }
 
         #f-1 > .text {
-            background-color: rgba(207, 142, 0, 0.7);
-            flex-grow: 1;
-            width:100%;
+            
+            width:50%;
+            height: 50%;
         }
 
         #f-2 {
-            background-image: url("img/deer.jpg");
+            background-image: url("img/bulb.jpg");
             height: 500px;
             justify-content: start;
             align-items: center;
@@ -118,14 +114,27 @@
         #f-4 {
             background-image: url("img/cup.jpg");
             height: 500px;
-            justify-content: start;
-            align-items:flex-start;
+            justify-content: center;
+            align-items:center;
         }
 
         #f-4 > .text {
-            background-color: rgba(207, 17, 17, 0.7);
-            width:40%;
-            height: 100%;
+            background-color: rgba(73, 114, 60, 0.7);
+            width:70%;
+            height: 70%;
+        }
+        #f-7 {
+            background-image: url("img/deer.jpg");
+            height: 500px;
+            justify-content: start;
+            align-items: center;
+            
+        }
+
+        #f-7 > .text {
+            background-color: rgba(180, 61, 61, 0.7);
+            width:60%;
+            
         }
 
         #f-5 {
@@ -144,19 +153,31 @@
         #f-6 {
             background-image: url("img/net.jpg");
             height: 500px;
-            justify-content: end;
+            justify-content: center;
             align-items: center;
         }
 
         #f-6 > .text {
-            background-color: rgba(238, 178, 66, 0.7);
-            width:100%;
-            height: 100%;
+            background-color: rgba(243, 180, 64, 0.8);
+            width:73%;
+            height: 73%;
         }
 
-        #flogo {
-            width: 25%;
-            box-shadow: 2px 2px white;
+        .logos{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .social {
+            width: auto;
+            max-height: 100px;
+            margin: 20px;
+        }
+
+        b{
+            font-size: 1.3em;
         }
 
 
@@ -171,15 +192,13 @@
     <div class="page">
         <div class="frame" id="f-1">
             <div class="text">
-                <div class="logo"></div>
                 <h1>
-                    מי אנחנו?<br>תא פלסטי"ק
+                    תא פלסטי"ק
                 </h1>
             </div>
         </div>
         <div class="frame" id="f-2">
             <div class="text">
-                <h2>פלסטי"ק?</h2>
                 <p><b>פ</b>ועלים </p>
                 <p><b>ל</b>מען</p>
                 <p><b>ס</b>ביבה</p>
@@ -190,27 +209,52 @@
         </div>
         <div class="frame" id="f-3">
             <div class="text">
-                <h2>במה אנחנו מאמינים?</h2>
-                <p>תא פלסטיק שואף לסביבה יותר נקייה וירוקה במגוון תחומים: צמצום פסולת, שינוי הרגלי צריכה, מזרעור השימוש במוצרים חד פעמיים ונייר וכו'.</p>
+                <h2>מי אנחנו?</h2>
+            <p>
+התא מורכב מסטודנטים לתואר הראשון המגיעים ממחלקות שונות באוניברסיטה. כחלק ממגמת אפס פסולת וקיימות העולמית והארצית, ומתוך התחושה שנושאי הפסולת והזיהום הסביבתי הופכים לבעיה גדולה בעולם, החלטנו להקים את תא פלסטי"ק באוניברסיטה.   
+            </p>
             </div>
         </div>
         <div class="frame" id="f-4">
             <div class="text">
-                <p>התא פועל יחד עם שאר התאים הירוקים בקמפוס מול האוניברסיטה, הקפטריות והגופים השונים בה.</p>
-            </div>
+                <h2>במה אנחנו מאמינים?</h2>
+            <p>
+                    בתור הקמפוס הכי חברתי והכי ירוק בארץ, עלינו להוות דוגמא להתנהלות אחרת. 
+                    אנו מאמינים שתרבות צריכה נכונה ומקיימת, יחד עם יצירת תנאים לכך בקמפוס, יעזרו ליצור סביבה נעימה וטובה יותר לחיות בה שתשמר גם לדורות הבאים.
+            </p>
+        </div>
+    </div>
+        <div class="frame" id="f-7">
+                <div class="text">
+                    <h2>העשייה שלנו</h2>
+                <p>
+                        אנו עובדים בשתי רמות – <br>
+                        ברמה הפרקטית - צמצום פסולת ויצירת קמפוס מקיים יותר ומזבל פחות. <br>
+                        ברמה האסטרטגית - חינוך לאפס פסולת וקידום מודעות לפתרונות הקיימים. <br>
+                        כל אלו מבוססים על שיתוף הקהילה הסטודנטיאלית בתקווה ליצור דור צעיר ושגריר שיפיץ את הבשורה הלאה. 
+                        
+                </p>
+                </div>
         </div>
         <div class="frame" id="f-5">
             <div class="text">
                 <h2>איפה אתם נכנסים לתמונה?</h2>
-                <p>אם נדלק בכם ניצוץ כשקראתם עלינו, אם האש הירוקה בוערת בכם, או אם אתם פשוט מחפשים בית ומשפחה בקמפוס הצטרפו אלינו! 
+                <p>
+                        אם נדלק בכם ניצוץ כשקראתם עלינו, אם האש הירוקה בוערת בכם, או אם אתם פשוט מתעצבנים מזבל שזרוק בכל פינה ומכמות האריזות במתנות פתיחת שנה - מקומכם איתנו! 
+                        <br>
+                        רוצים להצטרף? 
                     <a href="mailto:bguzerowaste@gmail.com?subject=פרטים">השאירו פרטים</a>
-                    , וניצור אתכם קשר :)</p>
+                     וניצור אתכם קשר :)</p>
             </div>
         </div>
         <div class="frame" id="f-6">
             <div class="text">
-                <h2>עד אז, עשו לנו לייק בפייסבוק!</h2>
-                <img id="flogo" src="img/flogo.png" alt="" onclick="window.location = 'https://www.facebook.com/BGUZW/';">
+                <h2>ועד אז, עקבו אחרינו בפייסבוק ובאינסטגרם!</h2>
+                <div class="logos">
+                        <img class="social" src="img/facebook.png" alt="" onclick="window.location = 'https://www.facebook.com/BGUZW/';">
+                        <img class="social" src="img/instagram.png" alt="" onclick="window.location = 'https://www.instagram.com/plastic_bgu/'">
+
+                </div>
             </div>
         </div>
     </div>
